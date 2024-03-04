@@ -3,19 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "build": "next build && next export",
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "fix": "next lint --fix",
+    "lint": "next lint",
+    "start": "next start"
   },
   "dependencies": {
-    "generate-password": "^1.7.1",
-    "next": "^14.1.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "^12.1.6",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "eslint": "^8",
-    "eslint-config-next": "14.1.0"
+    "eslint": "^8.11.0",
+    "eslint-config-next": "^12.1.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.6.0",
+    "serve": "^13.0.2"
   }
 }
